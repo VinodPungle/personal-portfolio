@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hands-on Capabilities — Vinod Pungle</title>
+  <meta name="description" content="Hands-on GenAI, agentic engineering, and MLOps capabilities: hybrid RAG with knowledge graphs, CrewAI multi-agent systems, DVC, Airflow, Terraform, Azure." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">VP</span> Vinod Pungle</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="capabilities.html">Hands-on Capabilities</a></li>
+        <li><a href="writing.html">Published Work</a></li>
+        <li><a href="resume.html">CV / Resume</a></li>
+        <li><a class="btn btn-primary btn-sm" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p style="font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); margin-bottom: 12px;">Hands-on Capabilities</p>
+      <h1>I don't just manage AI delivery — <span class="grad-text">I build the systems</span>.</h1>
+      <p>Every capability below is backed by public code, a shipped client system, or structured training with practitioners at Google, IIM Visakhapatnam, and SkillfyMe. Repos are open — read the code.</p>
+      <div class="hero-actions">
+        <a class="btn btn-secondary" href="https://github.com/VinodPungle" target="_blank" rel="noopener">github.com/VinodPungle</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill matrix -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Skill matrix</p>
+        <h2>Four stacks that make AI systems real</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card skill-group reveal">
+          <h3>GenAI &amp; Retrieval</h3>
+          <p>Grounded generation for domains where wrong answers are expensive.</p>
+          <div class="chips">
+            <span class="chip accent">RAG architecture</span><span class="chip accent">GraphRAG</span><span class="chip accent">Hybrid retrieval</span>
+            <span class="chip">Vector databases</span><span class="chip">Neo4j / knowledge graphs</span><span class="chip">Embeddings</span>
+            <span class="chip">Prompt &amp; context engineering</span><span class="chip">Azure OpenAI</span><span class="chip">RAG evaluation</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Agentic Engineering</h3>
+          <p>From single tool-using agents to orchestrated multi-agent systems.</p>
+          <div class="chips">
+            <span class="chip accent">CrewAI (agents &amp; flows)</span><span class="chip accent">Multi-agent orchestration</span>
+            <span class="chip">Azure Durable Functions agents</span><span class="chip">Agent tools &amp; APIs</span>
+            <span class="chip">Agent memory &amp; sessions</span><span class="chip">Guardrails &amp; agent security</span><span class="chip">Agent evals</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>MLOps &amp; DevOps</h3>
+          <p>The pipelines that keep AI systems reproducible and observable.</p>
+          <div class="chips">
+            <span class="chip accent">Azure DevOps</span><span class="chip accent">LLMOps</span><span class="chip">DVC</span><span class="chip">DagsHub</span>
+            <span class="chip">Apache Airflow</span><span class="chip">Docker</span><span class="chip">Terraform / HCP</span>
+            <span class="chip">GitHub Actions</span><span class="chip">Monitoring</span>
+          </div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Languages &amp; Data</h3>
+          <p>Two decades of Microsoft stack, retooled around Python for AI.</p>
+          <div class="chips">
+            <span class="chip accent">Python</span><span class="chip">C# / .NET</span><span class="chip">ASP.NET MVC / Web API</span>
+            <span class="chip">MS SQL Server</span><span class="chip">pandas · NumPy</span><span class="chip">scikit-learn</span><span class="chip">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured repos -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Selected repositories</p>
+        <h2>Code you can read today</h2>
+        <p>Working systems, not toy notebooks — retrieval, agents, and the ops scaffolding around them.</p>
+      </div>
+
+      <article class="case card-featured reveal" style="border: 1px solid transparent; background: linear-gradient(rgba(16,22,39,0.96), rgba(16,22,39,0.96)) padding-box, var(--accent-grad-wide) border-box;">
+        <div class="case-top">
+          <h3>hybrid-rag-capstone</h3>
+          <span class="case-meta">Python · Docker · flagship project</span>
+        </div>
+        <p class="case-role">Production-grade hybrid RAG — vector + knowledge-graph retrieval, end to end</p>
+        <p class="case-summary">
+          A complete RAG platform built solo, mirroring the architecture I deliver for enterprise clients: documents flow through an
+          ingestion pipeline into both a vector store and a graph database, retrieval fuses semantic similarity with graph relationships,
+          and every layer is engineered like a product — not a demo.
+        </p>
+        <ul>
+          <li>Modular architecture: <code>ingestion</code> · <code>embeddings</code> · <code>vector_db</code> · <code>graph_db</code> · <code>retrieval</code> · <code>llm</code> · <code>api</code> · <code>ui</code></li>
+          <li>Dedicated <strong>evaluation</strong> and <strong>monitoring</strong> modules — retrieval quality is measured, not assumed.</li>
+          <li>Ops from day one: Airflow DAGs for orchestration, DVC for data versioning, Docker Compose deployment, pytest suite, Streamlit demo UI.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip accent">RAG</span><span class="chip accent">GraphRAG</span><span class="chip">Airflow</span><span class="chip">DVC</span><span class="chip">Docker</span><span class="chip">Streamlit</span><span class="chip">pytest</span>
+        </div>
+        <a class="card-link" href="https://github.com/VinodPungle/hybrid-rag-capstone" target="_blank" rel="noopener">github.com/VinodPungle/hybrid-rag-capstone</a>
+      </article>
+
+      <div class="grid-3" style="margin-top: 28px;">
+        <div class="card reveal">
+          <p class="kicker">Agentic AI</p>
+          <h3>ai-portfolio</h3>
+          <p>CrewAI multi-agent project — defining agent roles, tasks, and crews that collaborate on a goal. The building blocks of agentic systems, in working Python.</p>
+          <div class="chips"><span class="chip">CrewAI</span><span class="chip">Python</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/ai-portfolio" target="_blank" rel="noopener">View repo</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">Agentic AI</p>
+          <h3>ai-projects</h3>
+          <p>CrewAI Flows experiments, including a guide-creator flow — event-driven agent pipelines where structured steps and agent autonomy are deliberately balanced.</p>
+          <div class="chips"><span class="chip">CrewAI Flows</span><span class="chip">Python</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/ai-projects" target="_blank" rel="noopener">View repo</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">Agentic CLI tooling</p>
+          <h3>agy-cli-projects</h3>
+          <p>Projects built with agentic CLI coding workflows — including a BigQuery release-notes application — exploring natural-language-first development end to end.</p>
+          <div class="chips"><span class="chip">Agentic coding</span><span class="chip">Python · JS</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/agy-cli-projects" target="_blank" rel="noopener">View repo</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">Infrastructure as Code</p>
+          <h3>hcp-terraform-demo</h3>
+          <p>HCP Terraform workflows — provisioning cloud infrastructure declaratively, the foundation under any production AI deployment.</p>
+          <div class="chips"><span class="chip">Terraform</span><span class="chip">HCL</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/hcp-terraform-demo" target="_blank" rel="noopener">View repo</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">CI/CD</p>
+          <h3>github_automation_demo</h3>
+          <p>GitHub Actions automation with Docker — pipeline design for continuous integration and delivery of containerised workloads.</p>
+          <div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Docker</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/github_automation_demo" target="_blank" rel="noopener">View repo</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">MLOps toolchain</p>
+          <h3>dvcdemorepo · dagshubdemo</h3>
+          <p>Data and experiment versioning with DVC and DagsHub — the reproducibility discipline that separates ML experiments from ML products.</p>
+          <div class="chips"><span class="chip">DVC</span><span class="chip">DagsHub</span><span class="chip">Jupyter</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle?tab=repositories" target="_blank" rel="noopener">View repos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I keep current -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">How I keep current</p>
+        <h2>Trained where the field is being defined</h2>
+        <p>Credentials matter for what they make you build, not the badge. Here's what each one demonstrates.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <p class="kicker">Google × Kaggle · Jun 2026</p>
+          <h3>5-Day AI Agents Intensive (Vibe Coding)</h3>
+          <p>Google's intensive on production agentic systems: agent tools &amp; interoperability (agent-to-agent communication), context engineering — sessions, skills, and memory — agent quality, security &amp; guardrails, and taking prototypes to governed production fleets. Capstone: building and deploying an autonomous agent competing on a live leaderboard.</p>
+          <div class="chips"><span class="chip accent">Agentic AI</span><span class="chip">Context engineering</span><span class="chip">Agent security</span></div>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">IIM Visakhapatnam · Apr 2025</p>
+          <h3>Executive Certificate in ML &amp; AI</h3>
+          <p>Five-month executive programme spanning ML foundations (regression to neural networks), NLP &amp; LLMs with prompt engineering, computer vision, and — critically — <strong>Production-Level AI</strong>: AI project management, MLOps, cloud ML pipelines, deployment and monitoring, plus AI strategy, ethics, and explainability. Completed with capstone project.</p>
+          <div class="chips"><span class="chip accent">ML &amp; AI</span><span class="chip">MLOps</span><span class="chip">AI strategy</span></div>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">SkillfyMe · Jan 2026</p>
+          <h3>DevOps with AI — MLOps &amp; LLMOps</h3>
+          <p>Certified hands-on programme covering the modern delivery toolchain for AI systems — CI/CD, containerisation, data/model versioning (DVC, DagsHub), and pipeline orchestration. The demo repos above are the artefacts of this training.</p>
+          <div class="chips"><span class="chip accent">MLOps</span><span class="chip">CI/CD</span><span class="chip">Docker</span></div>
+        </div>
+      </div>
+      <div class="stat-inline reveal">
+        <div><div class="num">PMP</div><div class="lbl">PMI · 2024</div></div>
+        <div><div class="num">PMI-ACP</div><div class="lbl">PMI · 2023</div></div>
+        <div><div class="num">SAFe 6</div><div class="lbl">Scaled Agile · 2024</div></div>
+        <div><div class="num">CSM</div><div class="lbl">Scrum Alliance · 2017</div></div>
+        <div><div class="num">GenAI ×2</div><div class="lbl">PMI GenAI for PMs · 2024</div></div>
+        <div><div class="num">MLOps</div><div class="lbl">SkillfyMe · 2026</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Need someone who can review the architecture and run the programme?</h2>
+      <p>That intersection is exactly where I work.</p>
+      <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-brand">Vinod Pungle</div>
+        <p>AI &amp; GenAI Delivery · Agentic Engineering</p>
+      </div>
+      <div class="foot-links">
+        <a href="projects.html">Projects</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="writing.html">Published Work</a>
+        <a href="resume.html">CV / Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-links">
+        <a href="https://github.com/VinodPungle" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/vinodpungle" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://vinood.hashnode.dev" target="_blank" rel="noopener">Blog</a>
+      </div>
+    </div>
+    <p class="foot-note">© 2026 Vinod Pungle · vinodpungle.com</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

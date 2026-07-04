@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Published Work — Vinod Pungle</title>
+  <meta name="description" content="Published writing and open-source work by Vinod Pungle: GraphRAG, LLM reliability, agentic AI, and enterprise AI delivery." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="brand-mark">VP</span> Vinod Pungle</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="capabilities.html">Hands-on Capabilities</a></li>
+        <li><a href="writing.html">Published Work</a></li>
+        <li><a href="resume.html">CV / Resume</a></li>
+        <li><a class="btn btn-primary btn-sm" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p style="font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); margin-bottom: 12px;">Published Work</p>
+      <h1>Writing and open-source work, <span class="grad-text">grounded in shipped systems</span>.</h1>
+      <p>I write about the patterns I've actually built and delivered — reliability in RAG systems, knowledge graphs, and what it takes to move GenAI from demo to production.</p>
+    </div>
+  </section>
+
+  <!-- Featured article -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Featured article</p>
+        <h2>From the blog</h2>
+      </div>
+
+      <article class="case card-featured reveal" style="border: 1px solid transparent; background: linear-gradient(rgba(16,22,39,0.96), rgba(16,22,39,0.96)) padding-box, var(--accent-grad-wide) border-box;">
+        <div class="case-top">
+          <h3>Stop Hallucinations in RAG: Why Knowledge Graphs Change Everything</h3>
+          <span class="case-meta">vinood.hashnode.dev</span>
+        </div>
+        <p class="case-role">GraphRAG · LLM reliability · Enterprise AI</p>
+        <p class="case-summary">
+          Pure vector retrieval breaks down in high-stakes domains: semantically similar isn't the same as factually connected, and that gap
+          is where hallucinations live. This piece makes the case for knowledge-graph-grounded retrieval — multi-hop relationships, explicit
+          dependencies, verifiable answers — drawn from building exactly this architecture for enterprise audit content and in my open-source
+          hybrid RAG system.
+        </p>
+        <div class="chips">
+          <span class="chip accent">GraphRAG</span><span class="chip accent">Hallucination mitigation</span><span class="chip">Neo4j</span><span class="chip">RAG architecture</span>
+        </div>
+        <a class="card-link" href="https://vinood.hashnode.dev/stop-hallucinations-in-rag-why-knowledge-graphs-change-everything" target="_blank" rel="noopener">Read on Hashnode</a>
+      </article>
+
+      <div class="grid-2" style="margin-top: 28px;">
+        <div class="card reveal">
+          <p class="kicker">Blog</p>
+          <h3>More writing</h3>
+          <p>New articles on agentic AI, retrieval architecture, and AI delivery are published on my Hashnode blog.</p>
+          <a class="card-link" href="https://vinood.hashnode.dev" target="_blank" rel="noopener">Visit the blog</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">Open source</p>
+          <h3>Code as publication</h3>
+          <p>My repositories are the working companions to the writing — most notably the hybrid RAG capstone that implements the knowledge-graph retrieval patterns discussed in the featured article.</p>
+          <a class="card-link" href="capabilities.html">Browse featured repositories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live applications placeholder -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Live applications</p>
+        <h2>Deployed demos</h2>
+        <p>Hosted demos of selected projects are coming soon. Meanwhile, the hybrid RAG system runs locally with one command — full setup instructions in the repo.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card reveal">
+          <p class="kicker">Run it yourself</p>
+          <h3>Hybrid RAG — Streamlit demo</h3>
+          <p>Clone the repository, bring the stack up with Docker Compose, and launch the Streamlit UI to query documents through hybrid vector + graph retrieval.</p>
+          <div class="chips"><span class="chip">docker compose up</span><span class="chip">streamlit run ui/app.py</span></div>
+          <a class="card-link" href="https://github.com/VinodPungle/hybrid-rag-capstone" target="_blank" rel="noopener">Get the code</a>
+        </div>
+        <div class="card reveal">
+          <p class="kicker">Watch this space</p>
+          <h3>Hosted demos — coming soon</h3>
+          <p>Live, hosted versions of the agentic and RAG demos are planned. Follow the blog or GitHub for release announcements.</p>
+          <a class="card-link" href="https://github.com/VinodPungle" target="_blank" rel="noopener">Follow on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Talking through a retrieval or agent architecture problem?</h2>
+      <p>I'm always glad to compare notes on RAG reliability, knowledge graphs, and agentic patterns.</p>
+      <a class="btn btn-primary" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="foot-brand">Vinod Pungle</div>
+        <p>AI &amp; GenAI Delivery · Agentic Engineering</p>
+      </div>
+      <div class="foot-links">
+        <a href="projects.html">Projects</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="writing.html">Published Work</a>
+        <a href="resume.html">CV / Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot-links">
+        <a href="https://github.com/VinodPungle" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/vinodpungle" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://vinood.hashnode.dev" target="_blank" rel="noopener">Blog</a>
+      </div>
+    </div>
+    <p class="foot-note">© 2026 Vinod Pungle · vinodpungle.com</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
