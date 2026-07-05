@@ -543,6 +543,30 @@ a.badge:hover { text-decoration: none; border-color: var(--blue); }
 .case ul { margin: 14px 0 0 18px; color: var(--muted); font-size: 0.95rem; }
 .case li { margin-bottom: 7px; max-width: 78ch; }
 
+/* ---------- Topic pipeline (Published Work) ---------- */
+
+.topic-list { list-style: none; margin-top: 16px; }
+.topic-list li {
+  position: relative;
+  padding: 9px 0 9px 22px;
+  color: var(--muted);
+  font-size: 0.93rem;
+  border-bottom: 1px solid var(--border);
+}
+.topic-list li:last-child { border-bottom: none; }
+.topic-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-grad);
+  opacity: 0.85;
+}
+.topic-list li strong { color: var(--ink-soft); font-weight: 600; }
+
 /* ---------- Skill matrix ---------- */
 
 .skill-group h3 {
