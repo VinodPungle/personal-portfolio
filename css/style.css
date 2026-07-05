@@ -636,6 +636,8 @@ a.badge:hover { text-decoration: none; border-color: var(--blue); }
 .cta-band p { color: var(--muted); max-width: 58ch; margin: 16px auto 0; }
 
 .cta-band .btn-primary { margin-top: 30px; }
+.cta-band .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+.cta-band .hero-actions .btn { margin-top: 0; }
 
 /* ---------- Contact ---------- */
 
